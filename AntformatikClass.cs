@@ -21,6 +21,16 @@ namespace AntMe.Player.Antformatik
         SpeedModifier = 0,
         ViewRangeModifier = 0
     )]
+    [Caste(
+        Name = "Balanciert",
+        AttackModifier = 10,
+        EnergyModifier = 10,
+        LoadModifier = 10,
+        RangeModifier = 10,
+        RotationSpeedModifier = 10,
+        SpeedModifier = 10,
+        ViewRangeModifier = 10
+    )]
     public class AntformatikClass : BaseAnt
     {
         #region Caste
@@ -57,6 +67,7 @@ namespace AntMe.Player.Antformatik
         /// </summary>
         public override void GettingTired()
         {
+            GoToAnthill();
         }
 
         /// <summary>
@@ -91,6 +102,8 @@ namespace AntMe.Player.Antformatik
         /// <param name="fruit">spotted fruit</param>
         public override void Spots(Fruit fruit)
         {
+            if (CurrentLoad == 0 && NeedsCarrier(fruit))
+                GoToDestination(fruit);
         }
 
         /// <summary>
@@ -101,6 +114,8 @@ namespace AntMe.Player.Antformatik
         /// <param name="sugar">spotted sugar</param>
         public override void Spots(Sugar sugar)
         {
+            if (CurrentLoad == 0)
+                GoToDestination(sugar);
         }
 
         /// <summary>
@@ -112,6 +127,7 @@ namespace AntMe.Player.Antformatik
         /// <param name="fruit">reached fruit</param>
         public override void DestinationReached(Fruit fruit)
         {
+            Take(fruit);
         }
 
         /// <summary>
@@ -123,6 +139,7 @@ namespace AntMe.Player.Antformatik
         /// <param name="sugar">reached sugar</param>
         public override void DestinationReached(Sugar sugar)
         {
+            Take(sugar);
         }
 
         #endregion
@@ -174,6 +191,8 @@ namespace AntMe.Player.Antformatik
         /// <param name="ant">spotted ant</param>
         public override void SpotsEnemy(Ant ant)
         {
+            Drop();
+            Attack(ant);
         }
 
         /// <summary>
@@ -184,6 +203,8 @@ namespace AntMe.Player.Antformatik
         /// <param name="bug">spotted bug</param>
         public override void SpotsEnemy(Bug bug)
         {
+            Drop();
+            Attack(bug);
         }
 
         /// <summary>
