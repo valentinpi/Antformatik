@@ -1,9 +1,8 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{0ea58bea-87c3-491a-b304-0c1429a56007}") = "Antformatik", "Antformatik.csproj", "{635f457a-e86b-473b-a224-c3739619b072}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antformatik", "Antformatik.csproj", "{635F457A-E86B-473B-A224-C3739619B072}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +10,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{635f457a-e86b-473b-a224-c3739619b072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{635f457a-e86b-473b-a224-c3739619b072}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{635f457a-e86b-473b-a224-c3739619b072}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{635f457a-e86b-473b-a224-c3739619b072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635F457A-E86B-473B-A224-C3739619B072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635F457A-E86B-473B-A224-C3739619B072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635F457A-E86B-473B-A224-C3739619B072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{635F457A-E86B-473B-A224-C3739619B072}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B618C202-B3F4-4CBD-91CA-B387378110C8}
 	EndGlobalSection
 EndGlobal
