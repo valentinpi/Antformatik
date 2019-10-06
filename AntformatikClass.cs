@@ -1,4 +1,5 @@
 using AntMe.English;
+using AntMe.Simulation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace AntMe.Player.Antformatik
         ViewRangeModifier = 0
     )]
     [Caste(
-        Name = "Balanciert",
+        Name = "Balanced",
         AttackModifier = 10,
         EnergyModifier = 10,
         LoadModifier = 10,
@@ -33,6 +34,11 @@ namespace AntMe.Player.Antformatik
     )]
     public class AntformatikClass : BaseAnt
     {
+        public AntformatikClass()
+        {
+
+        }
+
         #region Caste
         
         /// <summary>
@@ -44,7 +50,7 @@ namespace AntMe.Player.Antformatik
         /// <returns>Caste-Name for the next ant</returns>
         public override string ChooseCaste(Dictionary<string, int> typeCount)
         {
-            return "Default";
+            return "Balanced";
         }
 
         #endregion
