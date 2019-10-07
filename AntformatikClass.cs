@@ -34,13 +34,21 @@ namespace AntMe.Player.Antformatik
     )]
     public class AntformatikClass : BaseAnt
     {
+
+
+
+
+        static void UnhandledExceptionTrapper(object sender, UnhandledExceptionEventArgs e)
+        {
+            Environment.Exit(1);
+        }
         public AntformatikClass()
         {
-
+            System.AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionTrapper;
         }
 
         #region Caste
-        
+
         /// <summary>
         /// Every time that a new ant is born, its job group must be set. You can 
         /// do so with the help of the value returned by this method.
