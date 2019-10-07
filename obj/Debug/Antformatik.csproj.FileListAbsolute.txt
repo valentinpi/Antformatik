@@ -1,0 +1,11 @@
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\AntMe.Player.Antformatik.dll
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\AntMe.Player.Antformatik.pdb
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\AntMe.SharedComponents.dll
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\AntMe.Simulation.dll
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\AntMe.SharedComponents.xml
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\AntMe.Simulation.xml
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\de\AntMe.SharedComponents.resources.dll
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\de\AntMe.Simulation.resources.dll
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\Antformatik.csproj.CopyComplete
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\AntMe.Player.Antformatik.dll
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\AntMe.Player.Antformatik.pdb
