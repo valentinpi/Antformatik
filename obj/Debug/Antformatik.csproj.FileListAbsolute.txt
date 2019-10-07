@@ -10,11 +10,3 @@ C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\An
 C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\Antformatik.csproj.CopyComplete
 C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\AntMe.Player.Antformatik.dll
 C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\AntMe.Player.Antformatik.pdb
-C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\Deflector.dll
-C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\LinFu.Finders.dll
-C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\Mono.Cecil.dll
-C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\Mono.Cecil.Mdb.dll
-C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\Mono.Cecil.Pdb.dll
-C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\Mono.Cecil.Rocks.dll
-C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\LinFu.Finders.pdb
-C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\LinFu.Finders.xml
