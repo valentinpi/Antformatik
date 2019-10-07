@@ -1,5 +1,4 @@
 using AntMe.English;
-using AntMe.Simulation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,16 +12,6 @@ namespace AntMe.Player.Antformatik
         LastName = ""
     )]
     [Caste(
-        Name = "Default",
-        AttackModifier = 0,
-        EnergyModifier = 0,
-        LoadModifier = 0,
-        RangeModifier = 0,
-        RotationSpeedModifier = 0,
-        SpeedModifier = 0,
-        ViewRangeModifier = 0
-    )]
-    [Caste(
         Name = "Balanced",
         AttackModifier = 10,
         EnergyModifier = 10,
@@ -34,19 +23,6 @@ namespace AntMe.Player.Antformatik
     )]
     public class AntformatikClass : BaseAnt
     {
-
-
-
-
-        static void UnhandledExceptionTrapper(object sender, UnhandledExceptionEventArgs e)
-        {
-            Environment.Exit(1);
-        }
-        public AntformatikClass()
-        {
-            System.AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionTrapper;
-        }
-
         #region Caste
 
         /// <summary>
