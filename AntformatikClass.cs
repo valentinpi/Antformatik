@@ -13,13 +13,13 @@ namespace AntMe.Player.Antformatik
     )]
     [Caste(
         Name = "Balanced",
-        AttackModifier = 10,
-        EnergyModifier = 10,
-        LoadModifier = 10,
-        RangeModifier = 10,
-        RotationSpeedModifier = 10,
-        SpeedModifier = 10,
-        ViewRangeModifier = 10
+        AttackModifier = 2,
+        EnergyModifier = 2,
+        LoadModifier = 2,
+        RangeModifier = 2,
+        RotationSpeedModifier = 2,
+        SpeedModifier = 2,
+        ViewRangeModifier = 2
     )]
     public class AntformatikClass : BaseAnt
     {
@@ -48,6 +48,7 @@ namespace AntMe.Player.Antformatik
         /// </summary>
         public override void Waiting()
         {
+            GoForward();
         }
 
         /// <summary>
@@ -118,6 +119,7 @@ namespace AntMe.Player.Antformatik
         public override void DestinationReached(Fruit fruit)
         {
             Take(fruit);
+            GoToAnthill();
         }
 
         /// <summary>
@@ -130,6 +132,7 @@ namespace AntMe.Player.Antformatik
         public override void DestinationReached(Sugar sugar)
         {
             Take(sugar);
+            GoToAnthill();
         }
 
         #endregion
@@ -181,7 +184,6 @@ namespace AntMe.Player.Antformatik
         /// <param name="ant">spotted ant</param>
         public override void SpotsEnemy(Ant ant)
         {
-            Drop();
             Attack(ant);
         }
 
@@ -193,7 +195,6 @@ namespace AntMe.Player.Antformatik
         /// <param name="bug">spotted bug</param>
         public override void SpotsEnemy(Bug bug)
         {
-            Drop();
             Attack(bug);
         }
 
