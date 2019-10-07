@@ -13,13 +13,13 @@ namespace AntMe.Player.Antformatik
     )]
     [Caste(
         Name = "Balanced",
-        AttackModifier = 2,
-        EnergyModifier = 2,
-        LoadModifier = 2,
-        RangeModifier = 2,
-        RotationSpeedModifier = 2,
-        SpeedModifier = 2,
-        ViewRangeModifier = 2
+        AttackModifier        = 3,
+        EnergyModifier        = 3,
+        LoadModifier          = 3,
+        RangeModifier         = 3,
+        RotationSpeedModifier = 3,
+        SpeedModifier         = 3,
+        ViewRangeModifier     = 3
     )]
     public class AntformatikClass : BaseAnt
     {
@@ -79,6 +79,7 @@ namespace AntMe.Player.Antformatik
         /// </summary>
         public override void Tick()
         {
+            Think("Ay");
         }
 
         #endregion
@@ -184,7 +185,8 @@ namespace AntMe.Player.Antformatik
         /// <param name="ant">spotted ant</param>
         public override void SpotsEnemy(Ant ant)
         {
-            Attack(ant);
+            if (Destination == null && CurrentLoad == 0)
+                Attack(ant);
         }
 
         /// <summary>
@@ -195,7 +197,8 @@ namespace AntMe.Player.Antformatik
         /// <param name="bug">spotted bug</param>
         public override void SpotsEnemy(Bug bug)
         {
-            Attack(bug);
+            if (Destination == null && CurrentLoad == 0)
+                Attack(bug);
         }
 
         /// <summary>
