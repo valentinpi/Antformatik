@@ -9,3 +9,4 @@ C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\bin\de\AntMe
 C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\Antformatik.csproj.CopyComplete
 C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\AntMe.Player.Antformatik.dll
 C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\AntMe.Player.Antformatik.pdb
+C:\Users\Valentin\Documents\Visual Studio 2019\Projects\Antformatik\obj\Debug\Antformatik.csprojAssemblyReference.cache
