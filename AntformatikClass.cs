@@ -8,7 +8,7 @@ namespace AntMe.Player.Antformatik
 {
     [Player(
         ColonyName = "Antformatik",
-        FirstName = "",
+        FirstName = "Valentin, Fabio, David, Henrik",
         LastName = ""
     )]
     [Caste(
@@ -21,6 +21,18 @@ namespace AntMe.Player.Antformatik
         SpeedModifier         = 3,
         ViewRangeModifier     = 3
     )]
+    /*
+    [Caste(
+        Name = "Static",
+        AttackModifier = 3,
+        EnergyModifier = 3,
+        LoadModifier = 3,
+        RangeModifier = 3,
+        RotationSpeedModifier = 3,
+        SpeedModifier = 3,
+        ViewRangeModifier = 3
+    )]
+    */
     public class AntformatikClass : BaseAnt
     {
         #region Caste
@@ -34,6 +46,13 @@ namespace AntMe.Player.Antformatik
         /// <returns>Caste-Name for the next ant</returns>
         public override string ChooseCaste(Dictionary<string, int> typeCount)
         {
+            /*
+            if (typeCount["Balanced"] == 0)
+                return "Balanced";
+
+            return "Static";
+            */
+
             return "Balanced";
         }
 
@@ -79,6 +98,14 @@ namespace AntMe.Player.Antformatik
         /// </summary>
         public override void Tick()
         {
+            /*
+            if (Caste == "Static")
+            {
+                Stop();
+                return;
+            }
+            */
+
             Think("Ay");
         }
 
